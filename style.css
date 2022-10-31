@@ -1,63 +1,82 @@
+html {
+  background-color: transparent;
+}
+
 body {
-    background-color: palegoldenrod;
-    height: 50vh;
-    box-shadow: 5px 5px 50px 20px gray  ;
-    border-radius: 5px  ;
-  }
-  
-  .selections {
-    display: flex;
-    justify-content: center;
-    
-  }
-  
-  .selection {
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 2rem;
-    transition: 100ms;
-  }
-  
-  .selection:hover {
-    transform: scale(1.2);
-  }
-  
-  .results {
-    margin-top: 1rem;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    font-size: 2rem;
-  }
-  
-  .result-score {
-    margin-left: .1rem;
-    font-size: 3rem;
-    color: #333;
-  }
-  
-  .result-selection {
-    opacity: .5;
-  }
-  
-  .result-selection.winner {
-    opacity: 1;
-    font-size: 1.5rem;
-  }
-  button.playAgain{
-    display: block;
-    right: 50%;
-    padding: 1rem;
-    border-radius: 10px;
-    
+  background-color: palegoldenrod;
+  height: 100%;
+  box-shadow: 5px 5px 50px 20px gray;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-#points{
-    display: block;
-    text-align: center;
+.hideOptions {
+  display: flex;
+  justify-content: center;
+
 }
 
+.option {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 100ms;
+}
+
+.selection:hover {
+  transform: scale(1.2);
+}
+
+.results {
+  margin-top: 1rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.result-score {
+  margin-left: .1rem;
+  font-size: 3rem;
+  color: #333;
+}
+
+.result-selection {
+  opacity: .5;
+  font-size: 2.5rem;
+}
+
+.result-selection.winner {
+  opacity: 1;
+  font-size: 1.5rem;
+}
+
+button.playAgain {
+  display: block;
+  right: 50%;
+  padding: 1rem;
+  border-radius: 10px;
+
+}
+
+#points {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.playAgain {
+  margin-top: 1em;
+  background-color: palegoldenrod;
+}
+
+.playAgain:hover {
+  background-color: black;
+  color: white;
+}
