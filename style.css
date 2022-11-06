@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   background-color: transparent;
 }
@@ -8,6 +14,7 @@ body {
   box-shadow: 5px 5px 50px 20px gray;
   border-radius: 5px;
   overflow: hidden;
+  width: 100%;
 }
 
 .hideOptions {
@@ -18,16 +25,21 @@ body {
 
 .option {
   background: none;
-  border: none;
+  border: 2px black solid;
+  border-radius: 10px;
   outline: none;
   cursor: pointer;
   font-size: 2rem;
   transition: 100ms;
+  margin: 0.3em 0.2em;
+
 }
 
-.selection:hover {
+.option:hover {
   transform: scale(1.2);
+  transition: all 0.3s ease;
 }
+
 
 .results {
   margin-top: 1rem;
